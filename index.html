@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ff35f48ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Linkedin</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0px;
+    }
+
+    body {
+        background-color: #fafafa;
+    }
+
+    /* Navigation Part*/
+    header {
+        display: flex;
+        background-color: #163e4c;
+        justify-content: space-around;
+    }
+
+    .linked-logo {
+        width: 240px;
+        height: 60px;
+        display: flex;
+    }
+
+    .linked-logo img {
+        width: 100%;
+        height: 90%;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 3px;
+    }
+
+    .input input {
+        height: 37px;
+        margin-top: 11px;
+        width: 500px;
+        margin-left: 5px;
+        border-radius: 5px;
+        outline: none;
+        color: black;
+        font-size: 20px;
+        background-color: #ffffffc7;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 0px 10px;
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+
+    ul li a:hover {
+        color: rgb(220, 220, 220);
+    }
+
+    .fa-solid:hover {
+        color: rgb(220, 220, 220);
+        cursor: pointer;
+    }
+
+    .head-mid {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid {
+        color: white;
+        font-size: 20px;
+    }
+
+
+    /*Main part*/
+
+    /* Left Part*/
+    .left {
+        height: 400px;
+        width: 250px;
+        position: absolute;
+        left: 3%;
+        margin-top: 3%;
+        /* border: 2px solid black; */
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+    }
+
+    .left-image {
+        width: 100%;
+        height: 130px;
+        position: relative;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+    }
+
+    .left-logo {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -25%;
+    }
+
+    .left-logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+    }
+
+    .left-text {
+        margin-top: 45px;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .left-connection {
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .save-item {
+        display: flex;
+        font-size: 20px;
+        margin-top: 25px;
+
+    }
+
+    .fa-bookmark {
+        margin-right: 8px;
+    }
+
+    .second-left-box {
+        height: 200px;
+        width: 250px;
+        position: absolute;
+        left: 3%;
+        margin-top: 30%;
+        /* border: 2px solid black; */
+        /* border-radius: 20px; */
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+        border-radius: 8px;
+
+    }
+
+    .second-left-box-text {
+        color: black;
+        margin-top: 10%;
+        font-size: 19px;
+        margin-bottom: 40px;
+    }
+
+    .discover {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .second-left-box {
+        height: 200px;
+        width: 250px;
+        position: absolute;
+        left: 3%;
+        margin-top: 30%;
+        /* border: 2px solid black; */
+        /* border-radius: 20px; */
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+
+    }
+
+    /* Main navigation after first one */
+    .Second-navigation {
+        width: 867px;
+        height: 100px;
+        background-color: white;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 3%;
+        box-shadow: 1px 1px 2px 2px rgb(209, 203, 203);
+        border-radius: 8px;
+
+    }
+
+    .start-post {
+        padding: 10px;
+        display: flex;
+    }
+
+    /* Notebook icon in main navigation */
+    .fa-pen-to-square {
+        color: black;
+        font-size: 35px;
+        margin-top: -1px;
+        margin-right: 10px;
+    }
+
+    /* Second list in Second Main navigation */
+
+    .second-list {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .second-list li:hover {
+        cursor: pointer;
+    }
+
+    .fa-camera-retro {
+        color: black;
+        font-size: 35px;
+        margin-top: -1px;
+    }
+
+    .fa-regular {
+        color: black;
+        font-size: 30px;
+        margin-top: -1px;
+    }
+
+    .fa-regular:hover {
+        cursor: pointer;
+    }
+
+    .Me-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Me-logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .Me-logo img:hover {
+        cursor: pointer;
+    }
+
+    /*Right part*/
+
+    .right {
+        height: 340px;
+        width: 300px;
+        position: fixed;
+        right: 1%;
+        margin-top: 3%;
+        padding: 2px;
+        /* border: 1px solid black; */
+        /* border-radius: 20px; */
+        background-color: white;
+        box-shadow: 2px 2px 1px 2px rgb(231, 231, 231);
+        border-radius: 8px;
+
+    }
+
+    .right-feed {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        font-weight: 100;
+    }
+
+    .profile-pic {
+        width: 70px;
+        height: 65px;
+        margin-top: 15px;
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        margin-left: 1px;
+        /* margin-top: 10px; */
+    }
+
+    .right-inside {
+        display: flex;
+    }
+
+    .right-profile-text {
+        /* /* display: flex; */
+        /* align-items: center; */
+        margin-left: 8px;
+        margin-top: 25px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .right-profile-text,
+    h3 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .fa-plus {
+        color: black;
+        font-size: 12px;
+        position: absolute;
+        margin-left: 10px;
+        border: 1px solid black;
+        padding: 2px;
+    }
+
+    .fa-plus:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    /* Right Second Box*/
+
+    .right-second-box {
+        height: 280px;
+        width: 300px;
+        position: fixed;
+        right: 1%;
+        margin-top: 25%;
+        /* border: 1px solid black; */
+        /* border-radius: 20px; */
+        /* background-color: rgb(255, 255, 255); */
+        /* box-shadow: 1px 2px 1px 1px rgb(201, 201, 201); */
+        border-radius: 8px;
+        padding: 2px;
+
+    }
+
+    .right-second-box img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Main Mid Box  */
+
+    .mid {
+        width: 867px;
+        height: auto;
+        background-color: white;
+        /* border: 1px solid black; */
+        /* border-radius: 20px; */
+        margin: auto;
+        margin-top: 1%;
+        padding: 5px;
+
+    }
+
+    /* Posting posts */
+    /* .posts {
+     border: 2px solid rgb(202, 32, 32);
+     height: 500px;
+     width: 848px;
+     margin: auto;
+ } */
+
+    .posts {
+        width: 850px;
+        margin: 20px auto;
+        margin-top: 0px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* margin: auto; */
+    }
+
+    .post-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .page-name {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .posting-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+
+    .post-actions {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .action-button {
+        color: #000000;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="linked-logo">
+            <img src="./image/linkedinlogo.png" alt="Linkedin-logo">
+            <div class="input">
+                <input type="search" name="search" id="search" placeholder="Search...">
+            </div>
+        </div>
+        <div class="head-mid">
+            <ul>
+                <i class="fa-solid fa-house"></i>
+                <li><a href="#">Home</a></li>
+                <i class="fa-solid fa-users"></i>
+                <li><a href="#">My Network</a></li>
+                <i class="fa-solid fa-suitcase"></i>
+                <li><a href="#">Jobs</a></li>
+                <i class="fa-solid fa-message"></i>
+                <li><a href="#">Messaging</a></li>
+                <i class="fa-solid fa-bell"></i>
+                <li><a href="#">Notification</a></li>
+                <div class="Me-logo">
+                    <a href="https://www.facebook.com/profile.php?id=100092370637190">
+                        <img src="./image/pathan.PNG" alt="">
+                    </a>
+                </div>
+                <li><a href="https://www.facebook.com/profile.php?id=100092370637190">Me</a></li>
+                <i class="fa-solid fa-bars"></i>
+                <li><a href="#">Work</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Work -->
+
+
+    <!-- Left Box -->
+
+    <div class="left">
+        <img class="left-image" src="./image/sky-back.jpg" alt="">
+        <div class="left-logo">
+            <img src="./image/pathan.PNG" alt="">
+        </div>
+        <div class="left-text">
+            <h2>Khanzaid</h2>
+            <p>I am a professional web developer <br>
+                I am the CEO of khan's software house
+            </p>
+            <hr>
+            <div class="left-connection">
+                <h4>
+                    <pre>Who viewed your profile      300</pre>
+                </h4>
+                <h4>
+                    <pre>Connection                  1,837<br><b>Manage your netwok</b></pre>
+                </h4>
+            </div>
+            <hr>
+            <div class="save-item">
+                <i class="fa-regular fa-bookmark"></i>
+                <h4>Saved items</h4>
+            </div>
+        </div>
+    </div>
+    <div class="second-left-box">
+        <div class="second-left-box-text">
+            <h3>
+                <Pre>Recent             ></Pre>
+            </h3>
+        </div>
+        <div class="second-left-box-text">
+            <h3>
+                <pre>Group              ></pre>
+            </h3>
+        </div>
+        <hr>
+        <div class="discover">
+            <h1>Discover More</h1>
+        </div>
+    </div>
+
+    <!-- Right Box -->
+
+    <div class="right">
+        <div class="right-feed">
+            <h2>Add your feed</h2><i class="fa-regular fa-question"></i>
+        </div>
+        <div class="right-profile">
+            <div class="right-inside">
+                <div class="profile-pic">
+                    <a href="https://www.upwork.com/">
+                        <img src="./image/freelancer-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="right-profile-text">
+                    <a href="https://www.upwork.com/">
+                        <h3>Freelancer <i class="fa-solid fa-plus">Follow</i><br>
+                            Create an account on Freelaancer</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-profile">
+            <div class="right-inside">
+                <div class="profile-pic">
+                    <a href="https://www.upwork.com/">
+                        <img src="./image/upwork-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="right-profile-text">
+                    <a href="https://www.upwork.com/">
+                        <h3>Upwork Jobs <i class="fa-solid fa-plus">Follow</i><br>
+                            Create an account on Upwork</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-profile">
+            <div class="right-inside">
+                <div class="profile-pic">
+                    <a href="https://www.fiverr.com"> <img src="./image/fiverr-logo.png" alt=""></a>
+                </div>
+                <div class="right-profile-text">
+                    <a href="https://www.fiverr.com/">
+                        <h3>Fiverr Jobs <i class="fa-solid fa-plus">Follow</i><br>
+                            <h3>Create an account on Fiverr</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2
+            style="color: #65ABD6;margin-top: 10px;cursor: pointer;text-decoration: underline;font-family:poppins,serif;">
+            View all recomendations</h2>
+    </div>
+    <!-- Right Second box -->
+    <div class="right-second-box">
+        <img src="./image/dreamjob.png" alt="">
+    </div>
+
+    <div class="Second-navigation">
+        <div class="start-post">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <h2>Start a post</h2>
+        </div>
+        <hr>
+        <ul class="second-list">
+            <i class="fa-solid fa-camera-retro" style="color:#82AEFF"></i>
+            <li>Photo</Li>
+            <i class="fa-regular fa-circle-play" style="color:rgb(56, 108, 154)"></i>
+            <li>Video</li>
+            <i class="fa-regular fa-file" style="color:rgba(246, 25, 220, 0.575)"></i>
+            <li>Document</li>
+            <i class="fa-regular fa-newspaper" style="color:#FFE6DE"></i>
+            <li>Write article </li>
+        </ul>
+    </div>
+    <div class="mid">
+        <div class="posts">
+            <!-- First Post -->
+            <div class="post-header">
+                <img src="./image/1stman.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <div class="page-name">Daniel</div>
+                    <div>Posted on May 7, 2020</div>
+                </div>
+            </div>
+
+            <img src="./image/post-image.webp" alt="Main Image" class="posting-image">
+
+            <div class="post-actions">
+                <div class="action-button">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Post -->
+
+        <div class="posts">
+
+            <div class="post-header">
+                <img src="./image/2ndman.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <div class="page-name">Manav</div>
+                    <div>Posted on February 21, 2022</div>
+                </div>
+            </div>
+
+            <img src="./image/2ndpost-image.webp" alt="Main Image" class="posting-image">
+
+            <div class="post-actions">
+                <div class="action-button">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                </div>
+            </div>
+        </div>
+        <!-- Third Post -->
+        <div class="posts">
+
+            <div class="post-header">
+                <img src="./image/3rdman.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <div class="page-name">Rock</div>
+                    <div>Posted on December 5, 2023</div>
+                </div>
+            </div>
+
+            <img src="./image/3rdpost-image.png" alt="Main Image" class="posting-image">
+
+            <div class="post-actions">
+                <div class="action-button">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                </div>
+            </div>
+        </div>
+        <!-- Forth Post -->
+        <div class="posts">
+
+            <div class="post-header">
+                <img src="./image/1stman.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <div class="page-name">Xavier</div>
+                    <div>Posted on October 1, 2021</div>
+                </div>
+            </div>
+
+            <img src="./image/4thpost-image.jpg" alt="Main Image" class="posting-image">
+
+            <div class="post-actions">
+                <div class="action-button">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                </div>
+                <div class="action-button">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                </div>
+            </div>
+        </div>
+        <!-- Fifth Post -->
+        <div class="post-header">
+            <img src="./image/5th-profile-pic.jpg" alt="Profile Picture" class="profile-picture">
+            <div>
+                <div class="page-name">Nommi</div>
+                <div>Posted on July 23, 2020</div>
+            </div>
+        </div>
+
+        <img src="./image/5thpost-image.webp" alt="Main Image" class="posting-image">
+
+        <div class="post-actions">
+            <div class="action-button">
+                <i class="fa-regular fa-heart"></i>
+                Like
+            </div>
+            <div class="action-button">
+                <i class="fa-regular fa-comment"></i>
+                Comment
+            </div>
+            <div class="action-button">
+                <i class="fa-regular fa-share-from-square"></i>
+                Share
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
